@@ -120,5 +120,27 @@ testCase("ANSI colorizer", {
         "bolds text": function () {
             assert.equals(this.t.bold("String"), "\x1b[1mString\x1b[0m");
         }
+    },
+
+    ".stripSeq": {
+        setUp: function () {
+            this.t = colorizer.configure({ color: true, bright: true });
+        },
+
+        "strips ansi escape characters": function () {
+            assert.equals(this.t.stripSeq(this.t.red(this.t.yellow("Hey"))),
+                          "Hey");
+        }
+    },
+
+    ".charCount": {
+        setUp: function () {
+            this.t = colorizer.configure({ color: true, bright: true });
+        },
+
+        "counts number of readable characters": function () {
+            assert.equals(this.t.charCount(this.t.red(this.t.yellow("Hey"))),
+                          3);
+        }
     }
 });
