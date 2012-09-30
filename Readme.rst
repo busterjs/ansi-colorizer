@@ -26,6 +26,8 @@ settings are ``false`` (the default), the colorizer will not really do anything.
 When ``color`` is ``true``, methods colorize strings. When ``bright`` is
 ``true``, all color methods will result in the bright color variant.
 
+::
+
     var ansiColorizer = require("ansi-colorizer");
 
     var colorizer = ansiColorizer.configure({ color: true, bright: false });
@@ -37,38 +39,38 @@ When ``color`` is ``true``, methods colorize strings. When ``bright`` is
     colorizer = ansiColorizer.configure();
     colorizer.red("Hey"); //=> "Hey"
 
-`bold(string)`
---------------
+``bold(string)``
+----------------
 
 Brightens the string.
 
 
-`red(string)`
--------------
+``red(string)``
+---------------
 
 Colors string red.
 
-`yellow(string)`
-----------------
+``yellow(string)``
+------------------
 
 Colors string yellow.
 
-`green(string)`
----------------
+``green(string)``
+-----------------
 
 Colors string green.
 
-`purple(string)`
-----------------
+``purple(string)``
+------------------
 
 Colors string purple.
 
-`cyan(string)`
---------------
+``cyan(string)``
+----------------
 
 Colors string cyan.
 
-`grey(string)`
---------------
+``grey(string)``
+----------------
 
 Colors string grey.
