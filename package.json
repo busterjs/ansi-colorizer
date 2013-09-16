@@ -1,6 +1,6 @@
 {
     "name": "ansi-colorizer",
-    "version": "0.5.0",
+    "version": "1.0.0",
     "description": "Colorize/brighten text for terminals with ANSI escape sequences",
     "homepage": "http://busterjs.org/docs/ansi-colorizer",
     "author": "Christian Johansen",
