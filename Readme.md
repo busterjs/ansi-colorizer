@@ -19,16 +19,16 @@ When `color` is `true`, methods colorize strings. When `bright` is
 `true`, all color methods will result in the bright color variant.
 
 ```javascript
-    var ansiColorizer = require("ansi-colorizer");
+var ansiColorizer = require("ansi-colorizer");
 
-    var colorizer = ansiColorizer.configure({ color: true, bright: false });
-    colorizer.red("Hey"); //=> "\x1b[31mHey\x1b[0m"
+var colorizer = ansiColorizer.configure({ color: true, bright: false });
+colorizer.red("Hey"); //=> "\x1b[31mHey\x1b[0m"
 
-    colorizer = ansiColorizer.configure({ color: true, bright: trie });
-    colorizer.red("Hey"); //=> "\x1b[1m\x1b[31mHey\x1b[0m"
+colorizer = ansiColorizer.configure({ color: true, bright: trie });
+colorizer.red("Hey"); //=> "\x1b[1m\x1b[31mHey\x1b[0m"
 
-    colorizer = ansiColorizer.configure();
-    colorizer.red("Hey"); //=> "Hey"
+colorizer = ansiColorizer.configure();
+colorizer.red("Hey"); //=> "Hey"
 ```    
 
 `bold(string)`
