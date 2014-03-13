@@ -2,15 +2,13 @@
 
 [![Build status](https://secure.travis-ci.org/busterjs/ansi-colorizer.png?branch=master)](http://travis-ci.org/busterjs/ansi-colorizer)
 
-Dim and bright pretty shell colors
-
+> Dim and bright pretty shell colors
 
 `ansi-colorizer` is a small utility to add ANSI escape sequences to strings to
 output them with color. Configuring the colorizer produces an object that may
 or may not colorize or brighten text.
 
-`configure(options)`
---------------------
+### `configure(options)`
 
 Returns a new colorizer instance. Configuration options are `color` and
 `bright`. Both are booleans, and both are `false` by default. If both
@@ -31,38 +29,36 @@ colorizer = ansiColorizer.configure();
 colorizer.red("Hey"); //=> "Hey"
 ```    
 
-`bold(string)`
---------------
+### `bold(string)`
 
 Brightens the string.
 
 
-`red(string)`
--------------
+### `red(string)`
 
 Colors string red.
 
-`yellow(string)`
-----------------
+
+### `yellow(string)`
 
 Colors string yellow.
 
-`green(string)`
----------------
+
+### `green(string)`
 
 Colors string green.
 
-`purple(string)`
-----------------
+
+### `purple(string)`
 
 Colors string purple.
 
-`cyan(string)`
---------------
+
+### `cyan(string)`
 
 Colors string cyan.
 
-`grey(string)`
---------------
+
+### `grey(string)`
 
 Colors string grey.
