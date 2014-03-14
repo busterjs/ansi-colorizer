@@ -26,7 +26,8 @@
         "url": "https://github.com/busterjs/ansi-colorizer.git"
     },
     "scripts": {
-        "test": "node run-tests.js"
+        "test": "node run-tests.js",
+        "test-debug": "node --debug-brk run-tests.js"
     },
     "devDependencies": {
         "sinon": "~1.7",
