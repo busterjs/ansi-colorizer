@@ -31,8 +31,8 @@
         "test-debug": "node --debug-brk run-tests.js"
     },
     "devDependencies": {
-        "sinon": "~1.7",
-        "referee": "~1.0",
-        "buster-test": "~0.7"
+        "sinon": "1.x",
+        "referee": "1.x",
+        "buster-test": "0.7.x"
     }
 }
